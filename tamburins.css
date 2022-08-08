@@ -1,220 +1,200 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
 
 .header-bar {
-    width: 100%;
-    position: fixed;
-    z-index: 2;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
 }
 
 .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0 50px;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 50px;
+  color: #fff;
 }
 
-.item-bar>ul {
-    display: flex;
+.item-bar > ul {
+  display: flex;
 }
 
-.item-bar>ul>li {
-    margin: 0 10px;
-    font-size: 13px;
+.item-bar > ul > li {
+  margin: 0 10px;
+  font-size: 13px;
 }
 
 .item-bar i {
-    display: none;
+  display: none;
 }
-
 
 .title {
-    font-size: 46px;
-    width: 250px;
-    font-family: 'Gowun Batang', serif;
+  font-size: 46px;
+  width: 250px;
+  font-family: "Gowun Batang", serif;
 }
 
-.util-bar>ul {
-    display: flex;
+.util-bar > ul {
+  display: flex;
 }
 
-.util-bar>ul>li {
-    margin: 0 10px;
-    font-size: 13px;
+.util-bar > ul > li {
+  margin: 0 10px;
+  font-size: 13px;
 }
 
 .mainbanner {
-    /* position: relative; */
-    display: flex;
-    max-height: 100vh;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
+  display: flex;
+  max-height: 100vh;
 }
 
-.mainbanner>.person-img {
-    /* max-width: 100%; */
-    /* max-height: 100%; */
-    flex-basis: 100%;
-    flex-grow: 1;
+.mainbanner > .person-img {
+  flex-basis: 100%;
+  flex-grow: 1;
+  position: relative;
 }
 
 .mainbanner .person-img::before {
-    content: '';
-    display: block;
-    height: 100vh;
-    width: 100%;
-    background-image:
-        linear-gradient(0deg, transparent 300px, rgba(0, 0, 0, 0), #000),
-        linear-gradient(180deg, transparent 0px, rgba(0, 0, 0, 0), #000);
-    opacity: 0.4;
-    position: absolute;
-    }
-
-.mainbanner .person-img h2{
-    background: url(https://www.tamburins.com/img/main/20220208/candle_main_01_f.jpg) no-repeat;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+  content: "";
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      0deg,
+      transparent 300px,
+      rgba(0, 0, 0, 0),
+      #000
+    ),
+    linear-gradient(180deg, transparent 0px, rgba(0, 0, 0, 0), #000);
+  opacity: 0.4;
+  position: absolute;
 }
 
-
-.mainbanner>.candle-mv {
-    flex-basis: 100%;
-    flex-grow: 1;
-    /* max-width: 100%; */
-    /* height: 100vh; */
-    /* left: 0; */
-    /* max-height: 100%; */
-    /* display: none; */
+.mainbanner .person-img h2 {
+  background: url(https://www.tamburins.com/img/main/20220208/candle_main_01_f.jpg)
+    no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-.mainbanner>.candle-mv video {
-    /* max-width: 100%; */
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
+.mainbanner > .candle-mv {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.mainbanner > .candle-mv video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 .mid-text-area {
-    position: relative;
-    left: 0;
-    bottom: 230px;
+  position: relative;
+  left: 0;
+  bottom: 230px;
 }
 
 .mid-text-area .mid-text {
-    
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
 }
 
 .mid-text span {
-    text-align: center;
-    font-size: 12px;
-    padding-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 10px;
 }
 
 .mid-text div {
-    font-size: 36px;
-    text-align: center;
-    /* position: relative; */
+  font-size: 36px;
+  text-align: center;
 }
 
 .mid-text button {
-    border: 1px solid #fff;
-    background: none;
-    color: #fff;
-    padding: 10px 30px;
-    position: absolute;
-    top: 130px;
-    font-size: 14px;
-    font-weight: bold;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  padding: 10px 30px;
+  position: absolute;
+  top: 130px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-
 .mid-text small {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .footer {
-    position: relative;
-    bottom: 50px;
+  position: relative;
+  bottom: 50px;
 }
 
-.footer>p {
-    /* height: 150px; */
-    font-size: 10px;
-    text-align: center;
-    /* padding-top: 50px; */
-    line-height: 2;
-    box-sizing: border-box;
+.footer > p {
+  font-size: 10px;
+  text-align: center;
+  line-height: 2;
+  box-sizing: border-box;
 }
 
-.footer>p>a {
-    text-decoration: underline;
+.footer > p > a {
+  text-decoration: underline;
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
-    .util-bar-list {
-        display: none;
-    }
+  .util-bar-list {
+    display: none;
+  }
 
-    .item-bar>ul>li {
-        display: none;
-    }
-    .title {
-        text-align: center;
-        font-size: 22px;
-    }
-    .header-inner {
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px;
+  .item-bar > ul > li {
+    display: none;
+  }
+  .title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .header-inner {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .item-bar .fa-solid {
+    display: block;
+  }
 
-    }
-      .item-bar .fa-solid{
-       display: block;
-    }
-
-    .util-bar-listLast {
-        display: block;
-    }
-    .util-bar-listLast>a {
-        font-size: 16px;
-    }
+  .util-bar-listLast {
+    display: block;
+  }
+  .util-bar-listLast > a {
+    font-size: 16px;
+  }
 }
 
+@media screen and (max-width: 750px) {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media screen and (max-width:750px) {
-  
-   html {
-       scroll-behavior: smooth;
-   }
+  .mainbanner .person-img::before {
+    display: none;
+  }
+  .mainbanner {
+    display: block;
+    max-height: none;
+  }
 
-    .mainbanner .person-img::before {
-        display: none;
-    }
-    .mainbanner {
-        display: block;
-        max-height: none;
-    }
-    
+  .footer p {
+    padding: 20px;
+    text-align: left;
+    font-size: 8px;
+  }
 
-    .footer p {
-        padding: 20px;
-        text-align: left;
-        font-size: 8px;
-    }
-    
-    .footer div {
-        display: none;
-    }
+  .footer div {
+    display: none;
+  }
 }
